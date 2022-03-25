@@ -1,0 +1,11 @@
+{
+  "diagnostic.displayByAle": true,
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "languageserver": {
+      "sorbet": {
+        "command": "bundle",
+        "args": ["exec", "srb", "tc", "--lsp"],
+        "filetypes": ["ruby"]
+      }
+   }
+}
