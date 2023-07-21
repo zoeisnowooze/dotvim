@@ -10,6 +10,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'pangloss/vim-javascript'
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
@@ -22,6 +23,8 @@ Plug 'deuxpi/witchhazel', { 'branch': 'vim-hypercolor' }
 
 call plug#end()
 
+
+set nocompatible
 
 if has('autocmd')
   filetype plugin indent on
@@ -48,6 +51,9 @@ if maparg('<C-L>', 'n') ==# ''
 endif
 
 set laststatus=2
+set modelines=5
+set modeline
+set relativenumber
 set ruler
 set wildmenu
 
@@ -87,6 +93,7 @@ set termguicolors
 if $TERM ==# 'xterm-kitty'
   let &t_ut=''
 endif
+set ttyfast
 
 highlight clear SignColumn
 
